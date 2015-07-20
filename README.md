@@ -23,15 +23,10 @@
 - [Reference SPI](https://www.arduino.cc/en/Reference/SPI)
 - [Adafruit HXD8357D 3.5" 320x480 Color TFT Touchscreen 8 bit Control Library](Adafruit_TFTLCD library)
 - [Adafruit TFTLCD Library for 8 bit control](https://github.com/adafruit/TFTLCD-Library)
-
-
 - [Adafruit STMPE610 Resistive Touch Screen Controller](https://learn.adafruit.com/adafruit-2-8-tft-touch-shield-v2)
 - [Adafruit Resistive Touch Screen Controller Library](https://github.com/adafruit/Touch-Screen-Library)
-
-
 - [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Adafruit GFX Library Manual](https://learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf)
-
 - [Introducing Arduino library concepts and installation](http://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use)
 
 - 
