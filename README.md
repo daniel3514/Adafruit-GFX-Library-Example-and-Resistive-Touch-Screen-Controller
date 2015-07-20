@@ -1,4 +1,4 @@
-# Adafruit GFX Library Example 
+# Adafruit GFX Library Example and Resistive Touch Screen Controller
 
 - [Arduino Mega 2560 Rev 3](https://www.arduino.cc/en/Main/arduinoBoardMega2560)
 - [Adafruit HXD8357D 3.5" 320x480 Color TFT Touchscreen Breakout](https://learn.adafruit.com/adafruit-3-5-color-320x480-tft-touchscreen-breakout/overview)
