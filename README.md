@@ -29,8 +29,6 @@
 - [Adafruit GFX Library Manual](https://learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf)
 - [Introducing Arduino library concepts and installation](http://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use)
 
-- 
-
 Ejemplo de funciones graficas con Adafruit GFX Library
 
 
