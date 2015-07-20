@@ -1,8 +1,11 @@
 # Adafruit GFX Library Example and Resistive Touch Screen Controller
 
-- [Arduino Mega 2560 Rev 3](https://www.arduino.cc/en/Main/arduinoBoardMega2560)
 - [Adafruit HXD8357D 3.5" 320x480 Color TFT Touchscreen Breakout](https://learn.adafruit.com/adafruit-3-5-color-320x480-tft-touchscreen-breakout/overview)
+![](https://learn.adafruit.com/system/assets/assets/000/018/882/medium800/adafruit_products_2050_kit_ORIG.jpg?1408384817)
 - [Adafruit STMPE610 Resistive Touch Screen Controller](https://www.adafruit.com/products/1571)
+![](https://www.adafruit.com/images/970x728/1571-00.jpg)
+- [Arduino Mega 2560 Rev 3](https://www.arduino.cc/en/Main/arduinoBoardMega2560)
+![](https://www.arduino.cc/en/uploads/Main/ArduinoMega2560_R3_Fronte.jpg)
 - [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Adafruit TFTLCD Library](https://github.com/adafruit/TFTLCD-Library)
 
