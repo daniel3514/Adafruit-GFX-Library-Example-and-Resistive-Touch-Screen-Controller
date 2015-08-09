@@ -698,65 +698,87 @@ void Pantalla_Fondo()
 void Texto_Tamano()
 {
 	// tamaño de texto
+	// text size
 	
 	// void Adafruit_GFX::setTextSize(uint8_t s)
 
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	
 	tft.setTextColor(WHITE);		// color de texto
+									// Text color
 	tft.setTextSize(1);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextSize 1");	// texto
 	tft.println(" ");				// texto
 	
 	tft.setTextColor(BLUE);			// color de texto
+									// Text color
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona, alto del texto 15px ancho 12px
+									// Size of text, 1-100 tested and it works, high width of the text 15px 12px
 	tft.println("setTextSize 2");	// texto
 	tft.println(" ");				// texto
 	
 	tft.setTextColor(RED);			// color de texto
+									// Text color
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextSize 3");	// texto
 	tft.println(" ");				// texto
 	
 	tft.setTextColor(MAGENTA);		// color de texto
+									// Text color
 	tft.setTextSize(4);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextSize 4");	// texto
 	tft.println(" ");				// texto
 	
 	tft.setTextColor(GREEN);		// color de texto
+									// Text color
 	tft.setTextSize(5);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextSize 5");	// texto
 	tft.println(" ");				// texto
 	
 	tft.setTextColor(YELLOW);		// color de texto
+									// Text color
 	tft.setTextSize(6);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextSize 6");	// texto
 }
 
 void Texto_Color()
 {
 	// texto con color de fondo
+	// Background color text
 	
 	// void Adafruit_GFX::setTextColor(uint16_t c, uint16_t b)
 	// textcolor   = c;
 	// textbgcolor = b; 
 
 	tft.fillScreen(BLACK);			// fondo negro
-	
+									// black background
 	tft.setTextColor(BLUE);			// color de texto
+									// Text color
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextColor(color)");	// texto
 	
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// Text color
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("setTextColor(color, fondo)");		// texto
 }
 
 void Cursor()
 {
 	// posicion de cursor
+	// Cursor position
 	
 	// int16_t Adafruit_GFX::getCursorX(void) const {
 	// return cursor_x;
@@ -772,21 +794,28 @@ void Cursor()
 	// }
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor X, Y
+									// Cursor position X, Y
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(GREEN);		// color de texto
+									// Text color
 	tft.println("setCursor");		// texto
 	tft.println(" ");				// texto
 	tft.println("X = ");			// texto
 	tft.println(tft.getCursorX());	// texto, tft.getCursorX() devuelve la posicion del cursor
+									// Text, tft.getCursorX () returns the position of the cursor
 	tft.println(" ");				// texto
 	tft.println("Y = ");			// texto
 	tft.println(tft.getCursorY());	// texto, tft.getCursorY() devuelve la posicion del cursor
+									// Text, tft.getCursorX () returns the position of the cursor
 }
 
 void Pantalla_Tamano()
 {
 	// tamaño de pantalla
+	// screen size
 	
 	// int16_t Adafruit_GFX::width(void) const {
 	// return _width;
@@ -795,10 +824,14 @@ void Pantalla_Tamano()
 	// return _height;
 
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE);			// color de texto
+									// Text color
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
-	
+									// Size of text, we tried 1-100 and works
+									
 	tft.println("width");			// texto,
 	tft.println(tft.width());		// texto, tft.width() alto
 	
