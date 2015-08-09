@@ -385,7 +385,8 @@ void Rectangulo_Contorno()
 
 void Linea()
 {
-	// dibuja una linea
+	// dibuja una línea
+	// draw a line
 	
 	// void Adafruit_GFX::drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, uint16_t color)
 	
@@ -438,36 +439,48 @@ void Circulo_Seccion_Relleno_Estirar()
 
 void Circulo_Relleno()
 {
-	// dibuja un circulo con color de relleno
+	// dibuja un círculo con color de relleno
+	// Draw a circle with fill color
 	
 	// void Adafruit_GFX::fillCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color) {
 		
 	tft.fillScreen(BLACK);		// fondo negro
+								// black background
 	tft.setCursor(0, 0);		// posicion del cursor
+								// Cursor position
 	tft.setTextSize(2);			// tamaño de texto, lo probamos 1 hasta 100 y funciona
+								// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);	// color de texto
+								// color text
 	tft.println("fillCircle");	// texto
 			
 	tft.fillCircle(150, 150, 100, GREEN);	// circulo con relleno, tft.fillCircle(X, Y, radio, color de relleno); 
+											// Circle with filling tft.fillCircle (X, Y, radius, fill color);
 }
 
 void Circulo_Seccion()
 {
 	// dibuja el contorno de un circulo en secciones, lo parte en 4 y cuenta como si fueran las secciones del circulo en binario
+	// Draw the outline of a circle into sections, part 4 and counts as if they were sections of the circle in binary
 	
 	// void Adafruit_GFX::drawCircleHelper( int16_t x0, int16_t y0, int16_t r, uint8_t cornername, uint16_t color) {
 	
 	for (int cornername = 1; cornername <= 15; cornername ++)
 	{
 		tft.fillScreen(BLACK);			// fondo negro
+										// black background
 		tft.setCursor(0, 0);			// posicion del cursor
+										// Cursor position
 		tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+										// Size of text, we tried 1-100 and works
 		tft.setTextColor(WHITE);		// color de texto
+										// color text
 		tft.println("drawCircleHelper");// texto
 		tft.println(" ");				// texto
 		tft.println("corner name:");	// texto
 		tft.println(cornername);		// texto
 		tft.drawCircleHelper(150, 150, 100, cornername, WHITE);		// contorno de un circulo en secciones, 1 a 15
+																	// Outline of a circle in sections 1 to 15
 		delay(1500);
 	}	
 }
@@ -475,16 +488,22 @@ void Circulo_Seccion()
 void Circulo_Contorno()
 {
 	// dibuja un contorno de linea
+	// Draw a contour line
 	
 	// void Adafruit_GFX::drawCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color) {
 		
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);		// color de texto
+									// color text
 	tft.println("drawCircle");		// texto
 		
 	tft.drawCircle(150, 150, 100, RED);	// dibuja el contorno de un circulo, drawCircle(X, Y, radio, color)
+										// Draw the outline of a circle, drawCircle (X, Y, radio, color)
 }
 
 void Pantalla_Rotacion()
@@ -492,39 +511,55 @@ void Pantalla_Rotacion()
 	// setRotation establece la rotacion de la pantalla, 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
 	// getRotation devuelve el valor de la rotacion de pantalla actual
 	
+	// SetRotation sets the rotation of the screen, 0 = 0 * 1 = 90, 2 = 180 * 3 = 270*
+	// GetRotation returns the value of the current screen rotation
+	
 	// void Adafruit_GFX::setRotation(uint8_t x)
 	
-	// uint8_t Adafruit_GFX::getRotation(void) const {
-	// return rotation;
-	// }
+	// uint8_t Adafruit_GFX::getRotation(void)
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(WHITE);		// color de texto
+									// color text
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
-	
+									// Size of text, we tried 1-100 and works
 	tft.setRotation(0);				// rotacion de pantalla 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
+									// display rotation 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
 	tft.setCursor(0, 0);			// posicion del cursor
-	tft.println("setRotation:");		// texto
+									// Cursor position
+	tft.println("setRotation:");	// texto
 	tft.println(tft.getRotation());	// devuelve el valor de rotacion de pantalla
+									// Returns the value of screen rotation
 	delay(2000);
 	
 	tft.setRotation(1);				// rotacion de pantalla 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
+									// display rotation 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
 	tft.setCursor(0, 0);			// posicion del cursor
-	tft.println("setRotation:");		// texto
+									// Cursor position
+	tft.println("setRotation:");	// texto
 	tft.println(tft.getRotation());	// devuelve el valor de rotacion de pantalla
+									// Returns the value of screen rotation
 	delay(2000);
 	
 	tft.setRotation(2);				// rotacion de pantalla 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
+									// display rotation 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
 	tft.setCursor(0, 0);			// posicion del cursor
-	tft.println("setRotation:");		// texto
+									// Cursor position
+	tft.println("setRotation:");	// texto
 	tft.println(tft.getRotation());	// devuelve el valor de rotacion de pantalla
+									// Returns the value of screen rotation
 	delay(2000);
 	
 	tft.setRotation(3);				// rotacion de pantalla 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
+									// display rotation 0 = 0*, 1 = 90*, 2 = 180*, 3 = 270*
 	tft.setCursor(0, 0);			// posicion del cursor
-	tft.println("setRotation:");		// texto
+									// Cursor position
+	tft.println("setRotation:");	// texto
 	tft.println(tft.getRotation());	// devuelve el valor de rotacion de pantalla
+									// Returns the value of screen rotation
 	delay(2000);
 	
 	tft.setRotation(0);
@@ -533,11 +568,16 @@ void Pantalla_Rotacion()
 void Pantalla_ID()
 {
 	// devuelve el ID de la pantalla
+	// Returns the ID of the screen
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(WHITE);		// color de texto
+									// color text
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.println("readID");			// texto
 	tft.println(" ");				// texto
 	tft.println(tft.readID());		// texto
@@ -546,24 +586,29 @@ void Pantalla_ID()
 void Texto_Ajuste()
 {
 	// Ajusta el texto al tamaño de la pantalla
+	// Set the text to the screen size
 	
-	// void Adafruit_GFX::setTextWrap(boolean w) {
-	// wrap = w;
-	// }
+	// void Adafruit_GFX::setTextWrap(boolean w)
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(WHITE);		// color de texto
+									// color text
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	
-	tft.println("setTextWrap");	// texto 
-	tft.println(" ");	// texto
+	tft.println("setTextWrap");		// texto 
+	tft.println(" ");				// texto
 	
 	tft.setTextWrap(false);			// ajuste de texto
+									// Set text
 	tft.println("Esto es un texto sin ajuste setTextWrap");	// texto
-	tft.println(" ");	// texto
+	tft.println(" ");				// texto
 	
 	tft.setTextWrap(true);			// ajuste de texto
+									// Set text
 	tft.println("Esto es un texto con ajuste setTextWrap");	// texto
 	
 }
@@ -571,56 +616,82 @@ void Texto_Ajuste()
 void Pantalla_Fondo()
 {
 	// fondo de pantalla
+	// wallpaper
 	
 	// void Adafruit_GFX::fillScreen(uint16_t color)
 	
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 
 	tft.fillScreen(BLUE);			// fondo azul
+									// Blue background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 	delay(1000);
 	
 	tft.fillScreen(RED);			// fondo rojo
+									// Red background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 	delay(1000);
 	
 	tft.fillScreen(GREEN);			// fondo verde
+									// Green background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 	delay(1000);
 	
 	tft.fillScreen(CYAN);			// fondo cian
+									// Cyan background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto
 	delay(1000);	
 	
 	tft.fillScreen(MAGENTA);		// fondo magenta
+									// Magenta background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 	delay(1000);
 	
 	tft.fillScreen(YELLOW);			// fondo amarillo
+									// Yellow background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 	delay(1000);
 	
 	tft.fillScreen(WHITE);			// fondo blanco
+									// White background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 	delay(1000);
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextColor(BLUE, WHITE);	// color de texto
+									// color text
 	tft.println("fillScreen");		// texto 
 }
 
