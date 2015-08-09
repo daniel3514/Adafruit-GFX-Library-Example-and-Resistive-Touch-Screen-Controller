@@ -2,8 +2,9 @@
 // ***************************************************************************************************************************
 // **																														**
 // ** 	Ejemplo de funciones gráficas con Adafruit GFX Library, Arduino Mega, Adafruit HXD8357D TFT 320x480, 8 bit Mode		**
+// **	Example GFX graphics functions with Adafruit Library, Arduino Mega, Adafruit HXD8357D 320x480 TFT, 8 bit Mode		**
 // **																														**
-// **	Escrito en Notepad++																								**
+// **	Escrito en Notepad++																								**																								**
 // **	Compilado en Arduino v1.0.6																							**
 // **																														**
 // **	Hardware:																											**
@@ -85,13 +86,16 @@ Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
 void setup() 
 {
 	// inicializador de pantalla
+	// Initializer screen
 	tft.reset();
-	tft.begin(tft.readID());	// readID, el valor ID que lee la libreria desde la pantalla
+	tft.begin(tft.readID());	// readID, el valor ID que lee la librería desde la pantalla
+								// ReadID, the ID value read from the screen Bookseller
 }
 
 void loop() 
 {
 	// retardo entre tests
+	// Delay between tests
 	int retardo = 1000;
 	
 	Pantalla_Fondo();			// fillScreen
@@ -100,7 +104,7 @@ void loop()
 	Pantalla_Tamano();			// width height
 	delay(retardo);
 	
-	Pantalla_ID();			 	//readID
+	Pantalla_ID();			 	// readID
 	delay(retardo);
 	
 	Pantalla_Rotacion();		// setRotation getRotation
@@ -160,21 +164,28 @@ void loop()
 
 void Caracteres()
 {
-	// dibuja caracteres
+	// dibujar caracteres
+	// Draw characters
 	
 	// void Adafruit_GFX::drawChar(int16_t x, int16_t y, unsigned char c, uint16_t color, uint16_t bg, uint8_t size)
 	
 	tft.fillScreen(BLACK);		// fondo negro
-	tft.setCursor(0, 0);		// posicion del cursor
+								// black background
+	tft.setCursor(0, 0);		// posición del cursor
+								// Cursor position
 	tft.setTextSize(3);			// tamaño de texto, lo probamos 1 hasta 100 y funciona
+								// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);	// color de texto
+								// Text color
 	tft.println("drawChar");	// texto
 	tft.println(" ");	       	// texto
 	
 	for(int contar = 0; contar <= 255; contar ++)
 	{
-		tft.setCursor(0, 40);		// posicion del cursor
+		tft.setCursor(0, 40);			// posicion del cursor
+										// Cursor position
 		tft.setTextColor(WHITE, BLACK);	// color de texto
+										// Text color
 		tft.println(contar);	       	// texto
 		tft.drawChar(100, 100, contar, BLUE, WHITE, 10);
 		delay(200);
@@ -183,142 +194,193 @@ void Caracteres()
 
 void Triangulo_Relleno()
 {
-	// Dibuja un triangulo relleno
+	// Dibuja un triángulo relleno
+	// Draw a filled triangle
 	
 	// void Adafruit_GFX::fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color)
 	tft.fillScreen(BLACK);			// fondo negro
-	tft.fillTriangle(100, 100, 200, 100, 150, 150, MAGENTA); // dibuja un triangulo relleno, fillTriangle(x0, y0, x1, y1, x2, y2, color)
-	
+									// black background
+	tft.fillTriangle(100, 100, 200, 100, 150, 150, MAGENTA); 	// dibuja un triangulo relleno, fillTriangle(x0, y0, x1, y1, x2, y2, color)
+																// Draw a filled triangle, fillTriangle (x0, y0, x1, y1, x2, y2, color)
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);		// color de texto
+									// Text color
 	tft.println("fillTriangle");	// texto
 }
+
 void Triangulo()
 {
-	// Dibuja un triangulo
+	// Dibuja un triángulo
+	// Draw a triangle
 	
 	// void Adafruit_GFX::drawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color)
-	tft.fillScreen(BLACK);			// fondo negro
-	tft.drawTriangle(100, 100, 200, 100, 150, 150, MAGENTA); // dibuja un triangulo, drawTriangle(x0, y0, x1, y1, x2, y2, color)
-	
-	tft.setCursor(0, 0);			// posicion del cursor
+	tft.fillScreen(BLACK);			// black background
+	tft.drawTriangle(100, 100, 200, 100, 150, 150, MAGENTA); 	// dibuja un triángulo, drawTriangle(x0, y0, x1, y1, x2, y2, color)
+																// Draw a triangle, drawTriangle (x0, y0, x1, y1, x2, y2, color)
+	tft.setCursor(0, 0);			// posición del cursor
+									// Cursor position
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);		// color de texto
+									// Text color
 	tft.println("drawTriangle");	// texto
 }
+
 void Rectangulo_Redondeado_Relleno()
 {
 	// Dibuja un rectángulo redondeado relleno
+	// Draw a rounded rectangle filling
 	
 	// fillRoundRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, uint16_t color)
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setTextSize(3);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);		// color de texto
+									// Text color
 	
 	for (int radio = 0; radio <= 100; radio ++)
 	{
-		tft.fillScreen(BLACK);		// fondo negro
-		tft.setCursor(0, 0);			// posicion del cursor
+		tft.fillScreen(BLACK);			// fondo negro
+										// black background
+		tft.setCursor(0, 0);			// Cursor position
+										// posición del cursor
 		tft.println("drawRoundRect");	// texto
-		tft.setCursor(0, 30);		// posicion del cursor
-		tft.println("radio: ");		// texto
-		tft.println(radio);			// texto
+		tft.setCursor(0, 30);			// posicion del cursor
+										// Cursor position
+		tft.println("radio: ");			// texto
+		tft.println(radio);				// texto
 		
-		tft.fillRoundRect(100, 100, 40, 40, radio, YELLOW); // rectangulo redondeado con relleno, drawRoundRect(X, Y, ancho, alto, radio, color)
+		tft.fillRoundRect(100, 100, 40, 40, radio, YELLOW); // rectángulo redondeado con relleno, drawRoundRect(X, Y, ancho, alto, radio, color)
+															// Rounded rectangle with filling, drawRoundRect (X, Y, width, height, radio, color)
 	}
 }
 
 void Rectangulo_Redondeado()
 {
 	// Dibuja un rectángulo redondeado
+	// Draw a rounded rectangle
 	// drawRoundRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, uint16_t color)
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);		// color de texto
+									// Text color
 	
 	for (int radio = 0; radio <= 100; radio ++)
 	{
-		tft.fillScreen(BLACK);		// fondo negro
+		tft.fillScreen(BLACK);			// fondo negro
+										// black background
 		tft.setCursor(0, 0);			// posicion del cursor
-		tft.println("drawRoundRect");	// texto
-		tft.setCursor(0, 30);		// posicion del cursor
-		tft.println("radio: ");		// texto
-		tft.println(radio);			// texto
-		
-		tft.drawRoundRect(100, 100, 40, 40, radio, YELLOW);	// rectangulo redondeado, drawRoundRect(X, Y, ancho, alto, radio, color)
-	}
-	
-	tft.fillScreen(BLACK);		// fondo negro
-	
-	for (int radio = 0; radio <= 100; radio ++)
-	{
-		
-		tft.setCursor(0, 0);			// posicion del cursor
+										// Cursor position
 		tft.println("drawRoundRect");	// texto
 		tft.setCursor(0, 30);			// posicion del cursor
-		tft.setTextColor(WHITE, BLACK);	// color de texto
+										// Cursor position
 		tft.println("radio: ");			// texto
 		tft.println(radio);				// texto
 		
-		tft.drawRoundRect(100, 100, 40, 40, radio, YELLOW); // rectangulo redondeado, drawRoundRect(X, Y, ancho, alto, radio, color)
+		tft.drawRoundRect(100, 100, 40, 40, radio, YELLOW);	// rectángulo redondeado, drawRoundRect(X, Y, ancho, alto, radio, color)
+															// Rounded rectangle, drawRoundRect (X, Y, width, height, radio, color)
+	}
+	
+	tft.fillScreen(BLACK);				// fondo negro
+										// black background
+										
+	for (int radio = 0; radio <= 100; radio ++)
+	{
+		
+		tft.setCursor(0, 0);			// posicion del cursor
+										// posicion del cursor
+		tft.println("drawRoundRect");	// texto
+		tft.setCursor(0, 30);			// posicion del cursor
+										// posicion del cursor
+		tft.setTextColor(WHITE, BLACK);	// color de texto
+										// color text
+		tft.println("radio: ");			// texto
+		tft.println(radio);				// texto
+		
+		tft.drawRoundRect(100, 100, 40, 40, radio, YELLOW); // rectángulo redondeado, drawRoundRect(X, Y, ancho, alto, radio, color)
+															// Rounded rectangle, drawRoundRect (X, Y, width, height, radio, color)
 	}
 }
 
 void Rectangulo_Relleno()
 {
-	// dibuja un rectangulo con relleno de color
+	// dibuja un rectángulo con relleno de color
+	// Draw a rectangle with color fill
 	
 	// void Adafruit_GFX::fillRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color)
 	
 	tft.fillScreen(BLACK);		// fondo negro
+								// black background
 	tft.setTextSize(2);			// tamaño de texto, lo probamos 1 hasta 100 y funciona
+								// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);	// color de texto
+								// color text
 	tft.setCursor(0, 0);		// posicion del cursor
+								// Cursor position
 	tft.println("fillRect");	// texto
 	
-	tft.fillRect(100, 100, 50, 100, GREEN);	// rectangulo, 	tft.fillRect(X, Y, alto, ancho, color de fondo);	
+	tft.fillRect(100, 100, 50, 100, GREEN);	 	// rectángulo, tft.fillRect(X, Y, alto, ancho, color de fondo);
+												// Rectangle, tft.fillRect (X, Y, height, width, background color);
 }
 
 void Linea_Rapida_X_Y()
 {
-	// dibuja una linea rapida solo con x, y, sentido y color sobre X o Y
+	// dibuja una línea rápida solo con x, y, sentido y color sobre X o Y
+	// Draw a quick line only with x, y, meaning and color on X or Y
 	
 	// void Adafruit_GFX::drawFastVLine(int16_t x, int16_t y, int16_t h, uint16_t color)
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+									// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);		// color de texto
-	
+									// color text
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.println("drawFastVLine");	// texto
 	
 	tft.drawFastVLine(100, 100, 50, WHITE);		// linea rapida, tft.drawFastVLine(X, Y, sobre x, color);
-	
+												// Fast line, tft.drawFastVLine (X, Y, on x, color);
 	delay(1000);
 	
 	tft.fillScreen(BLACK);			// fondo negro
+									// black background
 	tft.setCursor(0, 0);			// posicion del cursor
+									// Cursor position
 	tft.println("drawFastHLine");	// texto
 	
 	tft.drawFastHLine(100, 100, 50, WHITE);		// linea rapida, tft.drawFastVLine(X, Y, sobre Y, color);
+												// Fast line, tft.drawFastVLine (X, Y, on x, color);
 }
 
 void Rectangulo_Contorno()
 {
 	// dibuja un rectangulo
+	// Draw a rectangle
 	
 	// void Adafruit_GFX::drawRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color)
 	
 	tft.fillScreen(BLACK);		// fondo negro
+								// black background
 	tft.setTextSize(2);			// tamaño de texto, lo probamos 1 hasta 100 y funciona
+								// Size of text, we tried 1-100 and works
 	tft.setTextColor(WHITE);	// color de texto
+								// color text
 	tft.setCursor(0, 0);		// posicion del cursor
+								// Cursor position
 	tft.println("drawRect");	// texto
 	
 	tft.drawRect(100, 100, 50, 100, YELLOW);	// rectangulo, 	tft.drawRect(X, Y, alto, ancho, color);	
+												// Rectangle, tft.drawRect (X, Y, height, width, color);
 }
 
 void Linea()
@@ -327,18 +389,24 @@ void Linea()
 	
 	// void Adafruit_GFX::drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, uint16_t color)
 	
-	tft.fillScreen(BLACK);		// fondo negro
-	tft.setTextSize(2);			// tamaño de texto, lo probamos 1 hasta 100 y funciona
-	tft.setTextColor(WHITE);	// color de texto
-	tft.setCursor(0, 0);		// posicion del cursor
-	tft.println("     drawLine");	// texto
+	tft.fillScreen(BLACK);					// fondo negro
+											// black background
+	tft.setTextSize(2);						// tamaño de texto, lo probamos 1 hasta 100 y funciona
+											// Size of text, we tried 1-100 and works
+	tft.setTextColor(WHITE);				// color de texto
+											// color text
+	tft.setCursor(0, 0);					// posicion del cursor
+											// Cursor position
+	tft.println("     drawLine");			// texto
 	
 	tft.drawLine(0, 0, 320, 480, GREEN);	// dibuja linea, tft.drawLine(X0, Y0, X1, Y1, color);
+											// Draw line, tft.drawLine (X0, Y0, X1, Y1, color);
 }
 
 void Circulo_Seccion_Relleno_Estirar()
 {
 	// dibuja un circulo en secciones con corner name de 1 a 3, y lo estira sobre Y y lo reduce sobre X con delta de 0 a x
+	// Draw a circle in corner sections name of 1-3, and stretches on and on and reduces delta X 0 x
 	
 	// void Adafruit_GFX::fillCircleHelper(int16_t x0, int16_t y0, int16_t r, uint8_t cornername, int16_t delta, uint16_t color) {
 	 
@@ -347,9 +415,13 @@ void Circulo_Seccion_Relleno_Estirar()
 		for (int delta = 1; delta <= 10; delta ++)
 		{
 			tft.fillScreen(BLACK);			// fondo negro
+											// black background
 			tft.setCursor(0, 0);			// posicion del cursor
+											// Cursor position
 			tft.setTextColor(WHITE);		// color de texto
+											// color text
 			tft.setTextSize(2);				// tamaño de texto, lo probamos 1 hasta 100 y funciona
+											// Size of text, we tried 1-100 and works
 			tft.println("fillCircleHelper");// texto
 			tft.println(" ");				// texto
 			tft.println("delta:");			// texto
@@ -358,6 +430,7 @@ void Circulo_Seccion_Relleno_Estirar()
 			tft.println("corner name:");	// texto
 			tft.println(cornername);		// texto
 			tft.fillCircleHelper(150, 150, 50, cornername, delta * 10, MAGENTA);	// tft.fillCircleHelper(X, Y, radio, cornername seccion 1 a 3, delta estirar 0 a x, color);
+																					// Tft.fillCircleHelper (X, Y, radio, cornername section 1-3, delta stretching 0 ax, color);
 			delay(500);
 		}
 	}
