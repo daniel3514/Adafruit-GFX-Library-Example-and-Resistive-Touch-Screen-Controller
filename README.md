@@ -28,11 +28,17 @@
 - [Adafruit GFX Library Manual](https://learn.adafruit.com/downloads/pdf/adafruit-gfx-graphics-library.pdf)
 - [Introducing Arduino library concepts and installation](http://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use)
 
-[Ejemplo de funciones graficas con Adafruit GFX Library](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Grafics%20functions%20Tests)
+[Adafruit GFX Library, Grafics Functions Example](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Grafics%20functions%20Tests)
 
 [![Youtube](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Grafics%20functions%20Tests/video.JPG)](https://www.youtube.com/watch?v=Y8XBOiMS-KI)
 
-[Ejemplo simple de Touch Screen](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20simple%20Test)
+[Simple Touch Screen Example](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20simple%20Test)
+
+[![Image](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Touch%20simple%20Test/Captura.JPG)](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20simple%20Test)
+
+[Touch Screen Rotation](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20Screen%20Rotation)
+
+[![Image]https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Touch%20Screen%20Rotation/Roration%200.JPG)](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20Screen%20Rotation)
 
 # Autores
 - Daniel Alejandro Becerril Hernandez
