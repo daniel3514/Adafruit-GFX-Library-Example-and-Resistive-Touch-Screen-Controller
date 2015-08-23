@@ -233,6 +233,8 @@ void Rectangulo_Redondeado_Relleno()
 {
 	// Dibuja un rectángulo redondeado relleno
 	// Draw a rounded rectangle filling
+	// alto y ancho expresado en pixeles
+	// Height and width expressed in pixels
 	
 	// fillRoundRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, uint16_t color)
 	
@@ -264,6 +266,9 @@ void Rectangulo_Redondeado()
 {
 	// Dibuja un rectángulo redondeado
 	// Draw a rounded rectangle
+	// alto y ancho expresado en pixeles
+	// Height and width expressed in pixels
+	
 	// drawRoundRect(int16_t x, int16_t y, int16_t w, int16_t h, int16_t r, uint16_t color)
 	
 	tft.fillScreen(BLACK);			// fondo negro
@@ -314,6 +319,8 @@ void Rectangulo_Relleno()
 {
 	// dibuja un rectángulo con relleno de color
 	// Draw a rectangle with color fill
+	// alto y ancho expresado en pixeles
+	// Height and width expressed in pixels
 	
 	// void Adafruit_GFX::fillRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color)
 	
@@ -366,6 +373,8 @@ void Rectangulo_Contorno()
 {
 	// dibuja un rectangulo
 	// Draw a rectangle
+	// alto y ancho expresado en pixeles
+	// Height and width expressed in pixels
 	
 	// void Adafruit_GFX::drawRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color)
 	
