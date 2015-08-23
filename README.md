@@ -38,7 +38,7 @@
 
 [Touch Screen Rotation](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20Screen%20Rotation)
 
-[![Image]https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Touch%20Screen%20Rotation/Roration%200.JPG)](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20Screen%20Rotation)
+[![Image](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Touch%20Screen%20Rotation/Roration%200.JPG)](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20Screen%20Rotation)
 
 # Autores
 - Daniel Alejandro Becerril Hernandez
