@@ -4,8 +4,7 @@
 ![](https://learn.adafruit.com/system/assets/assets/000/018/882/medium800/adafruit_products_2050_kit_ORIG.jpg?1408384817)
 ![](https://learn.adafruit.com/system/assets/assets/000/018/885/medium800/adafruit_products_sidew.jpg?1408384942)
 - [Adafruit STMPE610 Resistive Touch Screen Controller](https://www.adafruit.com/products/1571)![](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Hadware/Resistive%20Touch%20Screen%20Controller%20-%20Adafruit%20-%20STMPE610/STMPE610.jpg)
-- [Arduino Mega 2560 Rev 3](https://www.arduino.cc/en/Main/arduinoBoardMega2560)
-![](https://www.arduino.cc/en/uploads/Main/ArduinoMega2560_R3_Fronte.jpg)
+- [Arduino Mega 2560 Rev 3](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Hadware/Arduino%20Mega/arduino_mega.jpg)
 
 # Datasheets
 
