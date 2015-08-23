@@ -30,7 +30,7 @@
 
 [Adafruit GFX Library, Grafics Functions Example](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Grafics%20functions%20Tests)
 
-[![Youtube](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Grafics%20functions%20Tests/video.JPG)](https://www.youtube.com/watch?v=Y8XBOiMS-KI)
+[![Youtube](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Graphic%20Functions%20Tests/video.JPG)](https://www.youtube.com/watch?v=Y8XBOiMS-KI)
 
 [Simple Touch Screen Example](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20simple%20Test)
 
