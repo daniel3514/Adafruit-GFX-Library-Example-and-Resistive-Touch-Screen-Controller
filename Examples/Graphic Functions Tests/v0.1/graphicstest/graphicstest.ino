@@ -7,6 +7,8 @@
 // **	Escrito en Notepad++																								**																								**
 // **	Compilado en Arduino v1.0.6																							**
 // **																														**
+// **	v0.1																												**				
+// **																														**
 // **	Hardware:																											**
 // **	https://learn.adafruit.com/adafruit-3-5-color-320x480-tft-touchscreen-breakout										**
 // **																														**
@@ -578,6 +580,7 @@ void Pantalla_ID()
 {
 	// devuelve el ID de la pantalla
 	// Returns the ID of the screen
+	// readID()
 	
 	tft.fillScreen(BLACK);			// fondo negro
 									// black background
