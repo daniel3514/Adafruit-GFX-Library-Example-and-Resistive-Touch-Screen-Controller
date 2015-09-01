@@ -32,6 +32,30 @@
 
 [![Youtube](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Graphic%20Functions%20Tests/video.JPG)](https://www.youtube.com/watch?v=Y8XBOiMS-KI)
 
+- drawChar, Draw characters
+- drawCircle, Draw a contour line
+- fillCircle, Draw a circle with fill color
+- drawCircleHelper, Draw the outline of a circle into sections
+- fillCircleHelper, Draw a circle in corner sections name of 1-3, and stretches on and on and reduces delta X 0 x
+- setCursor, Cursor position
+- drawLine, draw a line
+- drawFastVLine, Draw a quick line only with x, y, meaning and color on X or Y
+- fillScreen, wallpaper
+- readID, Returns the ID of the screen
+- setRotation, sets the rotation of the screen, 0 = 0 * 1 = 90, 2 = 180 * 3 = 270*
+- getRotation, returns the value of the current screen rotation
+- width, screen size
+- height, screen size
+- drawRect, Draw a rectangle
+- drawRoundRect, Draw a rounded rectangle
+- fillRoundRect, Draw a rounded rectangle filling
+- fillRect, Draw a rectangle with color fill
+- setTextWrap, Set the text to the screen size
+- setTextColor, Background color text
+- setTextSize, text size
+- drawTriangle, Draw a triangle
+- fillTriangle, Draw a filled triangle
+
 [Simple Touch Screen Example](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20simple%20Test)
 
 [![Image](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Touch%20simple%20Test/Captura.JPG)](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/tree/master/Examples/Touch%20simple%20Test)
