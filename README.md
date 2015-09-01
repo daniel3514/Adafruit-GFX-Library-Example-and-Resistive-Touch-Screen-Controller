@@ -32,6 +32,7 @@
 
 [![Youtube](https://github.com/daniel3514/Adafruit-GFX-Library-Example-and-Resistive-Touch-Screen-Controller/blob/master/Examples/Graphic%20Functions%20Tests/video.JPG)](https://www.youtube.com/watch?v=Y8XBOiMS-KI)
 
+- drawPixel, Drawing pixels
 - drawChar, Draw characters
 - drawCircle, Draw a contour line
 - fillCircle, Draw a circle with fill color
