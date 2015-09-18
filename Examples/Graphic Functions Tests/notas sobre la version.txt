@@ -1,6 +1,6 @@
 v0.1
 - actualizacion de comentarios
-- agregado Drawing pixels (points) 
+- agregado Drawing pixels
 
 v0.0
 - hello world!!
