@@ -4,8 +4,8 @@
 // ** 	Ejemplo de funciones graficas con Adafruit GFX Library, Arduino Mega, Adafruit HXD8357D TFT 320x480, 8 bit Mode		**
 // **	Example GFX graphics functions with Adafruit Library, Arduino Mega, Adafruit HXD8357D 320x480 TFT, 8 bit Mode		**
 // **																														**
-// **	Escrito en Notepad++																								**					// **																														**
-// **	Compilado en Arduino v1.0.6																							**
+// **	Escrito en Sublime Text																								**					// **																														**
+// **	Compilado en Arduino v1.0.6, probado en v1.6.12																		**
 // **																														**
 // **	v0.1																												**				
 // **																														**
