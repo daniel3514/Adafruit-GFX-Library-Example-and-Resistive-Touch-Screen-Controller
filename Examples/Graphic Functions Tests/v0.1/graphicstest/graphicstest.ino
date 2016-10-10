@@ -71,6 +71,8 @@
 // Comment out the 240 and 320 lines, and uncomment the 320 and 480 lines
 
 // Assign human-readable names to some common 16-bit color values:
+// para obtener mas colores consultar esta web:
+// http://www.barth-dev.de/online/rgb565-color-picker/
 #define	BLACK   	0x0000
 #define	BLUE    	0x001F
 #define	RED     	0xF800
